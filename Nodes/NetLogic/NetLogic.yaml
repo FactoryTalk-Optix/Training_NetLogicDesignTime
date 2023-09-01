@@ -1,0 +1,4 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- File: DesignTime_Netlogic/DesignTime_Netlogic.yaml

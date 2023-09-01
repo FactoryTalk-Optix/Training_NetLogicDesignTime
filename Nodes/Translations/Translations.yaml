@@ -1,0 +1,48 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [33,3],
+    "Body": [
+     "","en-US","it-IT",
+     "Acknowledge","Acknowledge","Riconosci",
+     "Acknowledge All","Acknowledge All","Riconosci Tutti",
+     "Confirm","Confirm","Conferma",
+     "Confirm All","Confirm All","Conferma Tutti",
+     "Name","Name","Nome",
+     "Message","Message","Messaggio",
+     "Active","Active","Attivo",
+     "Acked","Acked","Riconosciuto",
+     "Confirmed","Confirmed","Confermato",
+     "Severity","Severity","Severity",
+     "Alarm on Variable1","Alarm on Variable1","Allarme su Variable1",
+     "Warning on Variable3","Warning on Variable3","Warning su Variable3",
+     "Alarm on Variable2","Alarm on Variable2","Allarme su Variable2",
+     "Warning on Variable4","Warning on Variable4","Warning su Variable4",
+     "Warning! Variable value = {0}","Warning! Variable value = {0}","Attenzione! Valore variable = {0}",
+     "Alarm on Zone1","Alarm on Zone1","Allarme in Zona1",
+     "Alarm on Zone2","Alarm on Zone2","Allarme in Zona1",
+     "Timestamp","Timestamp","Data/Ora",
+     "Alarm of Zone1","Alarm of Zone1","Allarme Zona1",
+     "Alarm of Zone2","Alarm of Zone2","Allarme Zona2",
+     "Source Variable","Source","Sorgente",
+     "SourceName","Source","Variabile",
+     "Refresh","Refresh","Aggiorna",
+     "From","From","Da",
+     "To","To","A",
+     "Alarm Basic","Alarm Basic","Allarmi Base",
+     "Alarm History","Alarm History","Storico Allarmi",
+     "Alarms with Value","Alarms with Value","Allarmi analogici",
+     "Digital Alarms","Digital Alarms","Allarmi Digitali",
+     "Level Alarms","Level Alarms","Allarmi Analogici",
+     "Require acknowledge_and confirm","Require acknowledge\nand confirm","Richiede conferma e \nreset",
+     "Without acknowledge_and confirm","Without acknowledge\nand confirm","Non richiede conferma\n e reset"
+    ]
+   }

@@ -1,0 +1,65 @@
+Name: DesignTime_Netlogic
+Type: FolderType
+Children:
+- Name: _1_Create_Simple_Variables
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: CreateVariables
+- Name: _2_Create_Motor_Type
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: CreateMotorType
+- Name: _3_Create_Motor_Instances
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: CreateMotorInstances
+- Name: _4_Create_Motor_Widget_Instances
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: CreateMotorWidgetInstances
+- Name: _5_Script_Parameters
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: Variable_Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MyVariable"
+  - Name: Folder_Name
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "MyFolder"
+  - Class: Method
+    Name: ReadParameters
+- Name: _6_Cleanup_Project
+  Type: NetLogic
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Class: Method
+    Name: DeleteModelVariables

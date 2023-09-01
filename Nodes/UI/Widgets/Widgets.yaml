@@ -1,0 +1,178 @@
+Name: Widgets
+Type: FolderType
+Children:
+- Name: MotorWidget
+  Id: g=bfdbfeb17d7ecaefade38a25cf240b04
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 260.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: speed
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{MotorAlias}/Speed"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 0.0
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 29.0
+  - Name: running
+    Type: Switch
+    Children:
+    - Name: Checked
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "{MotorAlias}/Running"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+  - Name: MotorAlias
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: LeftMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: RightMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: BottomMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: Enabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: HitTestVisible
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: false
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: Opacity
+    Type: BaseVariableType
+    DataType: Float
+    ModellingRule: Optional
+    Value: 100.0
+  - Name: Rotation
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 0.0
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 0
+  - Name: Visible
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
